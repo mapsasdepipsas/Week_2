@@ -53,3 +53,47 @@ console.log(`${pers1.nombre} tiene ${edadPers1} años`);
 pers1.printAll();
 //reto 5
 pers1.printHobbies();
+console.log("Reto 7 abajo");
+
+
+//reto 7
+//• Crear una clase que se llame Contacts que tenga un atributo que sea un array de objetos
+//de la clase Person. No olvides seguir trabajando desde tu rama ”dia1”.
+//• El constructor de la clase Contacts no debe tener parámetros de entrada pero debe
+//inicializar el array.
+class Contacts{
+    constructor() {
+        this.personas = [];
+    }
+    añadirpersonas(persona) {
+        this.personas.push(persona);
+    }
+    enseñarpersonas(){
+        this.personas.forEach(persona =>{
+            persona.printAll();
+            persona.printHobbies();
+        });
+    }
+    printPersons(){
+        this.personas.forEach(persona =>{
+            for(let atributo in persona){
+                console.log(`${atributo}: ${persona[atributo]}`);
+            }
+            console.log();
+        })
+    }
+}
+
+
+let contactos = new Contacts();
+let persona1 = new Person("Maria", 80, 178, 1978, ["leer", "videojuegos"]) 
+let persona2 = new Person("Alberto", 70, 160, 2000, ["cantar", "nadar"])
+
+contactos.persona1;
+contactos.persona2;
+
+contactos.printPersons();
+
+
+//Crear un método llamado printPersons que imprima cada uno de los atributos de cada
+//objeto Person.
