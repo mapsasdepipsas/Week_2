@@ -35,24 +35,3 @@ export class Person{
     }
 }
 
-let persona1 : Person = new Person("Juan", 45, "Estrella");
-console.log(persona1);
-
-//cambiar valor de un objeto PUBLICO:
-persona1.age = 34;
-console.log(persona1);
-
-console.log(persona1.getadress());
-
-//NO se hace console.log de setadress pq no me devuelve nada, set simplemente cambia el valor al objeto.
-persona1.setadress("Luna");
-//hacemos un console.log de getadress DE NUEVO, 1 vez modificado antes para ver el nuevo valor que le hemos dado en el setadress 
-console.log(persona1.getadress());
-//para que saque el printadress y el nombre de la calle cambiada con el setadress(Luna)
-console.log(persona1.printAdress());
-
-//printname
-console.log(persona1.printName());
-
-//yearofbirth
-console.log(persona1.yearOfBirth(2023));
