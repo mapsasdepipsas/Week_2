@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 class Person{
 
     //constructor
@@ -99,4 +97,3 @@ contactos.printPersons();
 
 //Crear un método llamado printPersons que imprima cada uno de los atributos de cada
 //objeto Person.
->>>>>>> dia1
