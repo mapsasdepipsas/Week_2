@@ -1,11 +1,8 @@
 let Contacts = require('./contacts');
 
 
-
 let contactos = new Contacts();
-
-
-contactos.añadirpersonas(persona1);
-contactos.añadirpersonas(persona2);
+contactos.añadirPersona("Maria", 80, 178, 1978, ["leer", "videojuegos"]); 
+contactos.añadirPersona("Alberto", 70, 160, 2000, ["cantar", "nadar"]);
 
 contactos.printPersons();
