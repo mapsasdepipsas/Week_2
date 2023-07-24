@@ -40,11 +40,11 @@ var Vector = /** @class */ (function () {
     };
     //multNumber(n:number):Vector. Realiza el producto entre elements y el número n.
     Vector.prototype.multNumber = function (n) {
-        var result = new Vector(this.elements.length, 0);
+        var result = [];
         for (var index = 0; index < this.elements.length; index++) {
-            result.elements[index] = this.elements[index] * n[index];
+            result.push(this.elements[index] * n);
         }
-        return result;
+        return new Vector(this.n, this.k);
     };
     return Vector;
 }());

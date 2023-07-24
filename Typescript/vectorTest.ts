@@ -1,22 +1,35 @@
 import { Vector } from "./vector";
-let vector = new Vector(8, 78);
-let vector2 = new Vector(7, 65);
+let vector = new Vector(10, 78);
+let vector2 = new Vector(11, 65);
 
 //print()
-console.log(vector.print());
-console.log(vector2.print());
+console.log("logs de print");
+
+vector.print();
+vector2.print();
 
 //add(v1:Vector):Vector
+console.log("logs de add");
+
 let sumvect = vector.add(vector2)
-sumvect.add(Vector);
+sumvect.print();
 
 //subs(v1:Vector):Vector
-console.log(vector.subs);
+console.log("logs de subs");
+
+let restavect = vector.subs(vector2)
+restavect.print();
 
 //mult(v1:Vector):Vector
-console.log(vector.mult);
+console.log("logs de mult");
+
+let multvect = vector.mult(vector2)
+multvect.print();
 
 //multNumber(n:number):Vector
-console.log(vector.multNumber);
+console.log("logs de multnumber");
+
+let mult2vect = vector.multNumber(9)
+mult2vect.print();
 
 

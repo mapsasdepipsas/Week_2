@@ -37,11 +37,11 @@ export class Vector{
     }
     //multNumber(n:number):Vector. Realiza el producto entre elements y el número n.
     public multNumber(n:number): Vector{
-        let result: Vector = new Vector(this.elements.length, 0);
+        let result: number[] = [];
         for (let index = 0; index < this.elements.length; index++) {
-            result.elements[index]= this.elements[index] * n[index];  
+            result.push(this.elements[index] * n);  
         }
-        return result;
+        return new Vector(this.n, this.k);
     }
 }
 
